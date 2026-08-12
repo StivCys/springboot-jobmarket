@@ -1,7 +1,7 @@
 # SPEC-002 — Perfil Profissional (Candidato)
 
 **Status:** Draft
-**Versão:** 0.2
+**Versão:** 0.3
 **Tipo:** Modelo de Domínio
 **Depende de:** SPEC-000, SPEC-001, SPEC-005
 
@@ -73,6 +73,9 @@ CandidateProfile
 │     ├── status
 │     └── dataDisponibilidade
 │
+├── Senioridade atual
+│     └── nivel
+|
 ├── Experiências[]
 │
 ├── Formação[]
@@ -167,6 +170,33 @@ Candidato atualmente empregado ou comprometido, mas aberto a receber oportunidad
 Candidato não deseja receber oportunidades no momento.
 
 `dataDisponibilidade` permite representar situações em que o candidato só poderá iniciar posteriormente.
+
+---
+
+## 6.1 Senioridade atual
+
+```
+CurrentSeniority
+└── nivel
+```
+
+Utiliza o mesmo enum definido para `Opportunity.senioridade` (SPEC-004,
+seção 8):
+
+```
+JUNIOR
+PLENO
+SENIOR
+ESPECIALISTA
+```
+
+Este campo representa o nível profissional **atual** do candidato,
+autodeclarado. É diferente de `senioridadesAceitas[]` (seção 11.4), que
+representa o que o candidato aceita/deseja — os dois podem divergir (ex:
+candidato `SENIOR` que aceita oportunidades `PLENO`).
+
+A senioridade atual é o campo utilizado pela SPEC-006 (seção 3.2) para
+comparação com a senioridade exigida pela oportunidade.
 
 ---
 
@@ -302,9 +332,9 @@ Preference
 ### 11.1 Modelo de trabalho
 
 ```text
-REMOTE
-HYBRID
-ONSITE
+REMOTO
+HIBRIDO
+PRESENCIAL
 ```
 
 O candidato pode aceitar mais de um modelo.
@@ -321,9 +351,10 @@ HYBRID
 ```text
 CLT
 PJ
-FREELANCE
-TEMPORARY
-INTERNSHIP
+FREELANCER
+TEMPORARIO
+PROJETO
+ESTAGIO
 ```
 
 O candidato pode aceitar múltiplos tipos.
@@ -437,6 +468,7 @@ A completude não deve impedir o candidato de utilizar a plataforma, mas poderá
 7. O candidato pode possuir múltiplas preferências profissionais.
 8. Uma preferência pode aceitar múltiplos modelos de trabalho, tipos de contratação, localizações e senioridades.
 9. A senioridade atual do candidato pode ser diferente da senioridade desejada.
+   9.1. `CandidateProfile.senioridadeAtual` é o campo utilizado pelo matching (SPEC-006) para comparação com `Opportunity.senioridade`; `senioridadesAceitas[]` representa preferência e não substitui esse campo.
 10. A faixa salarial é opcional.
 11. O currículo anexado não substitui os dados estruturados do perfil.
 12. Um candidato `UNAVAILABLE` não deve receber novas oportunidades por matching ativo.

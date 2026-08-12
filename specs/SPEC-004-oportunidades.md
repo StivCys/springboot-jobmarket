@@ -1,9 +1,9 @@
 # SPEC-004 — Oportunidades
 
 **Status:** Draft
-**Versão:** 0.2
+**Versão:** 0.3
 **Tipo:** Modelo de Domínio
-**Depende de:** SPEC-000, SPEC-003
+**Depende de:** SPEC-000, SPEC-003, SPEC-005
 
 ---
 
@@ -273,6 +273,15 @@ Requisitos
 
 Os requisitos estruturados podem referenciar elementos da taxonomia definida na **SPEC-005**.
 
+Nesta spec, `obrigatorios[]` e `desejaveis[]` representam a visão conceitual
+do requisito, organizada por categoria. O modelo relacional autoritativo é
+o `OpportunitySkill` definido na SPEC-005 (seção 8), no qual cada associação
+entre `Opportunity` e `Skill` carrega um atributo `tipo` (`REQUIRED` ou
+`DESIRED`). Os dois arrays desta seção são, na prática, uma projeção desse
+relacionamento agrupada por `tipo`.
+
+````
+
 ---
 
 ### 10.1 Requisitos obrigatórios
@@ -285,7 +294,7 @@ Exemplo:
 Java
 Spring Boot
 PostgreSQL
-```
+````
 
 A ausência de um requisito obrigatório pode reduzir fortemente a compatibilidade ou ser utilizada como critério de corte pelo matching.
 
@@ -359,13 +368,21 @@ OpportunityPreference
 
 Exemplos conceituais:
 
-```text
-experienciaSetorial = FINTECH
+```
 experienciaInternacional = true
 experienciaComTimesRemotos = true
 ```
 
+Experiência setorial/de domínio (ex: "Fintech", "E-commerce", "Saúde") **não**
+deve ser modelada como `OpportunityPreference`. Esse tipo de informação já é
+coberto pela categoria `DOMAIN` de `Skill` (SPEC-005, seção 15), associada à
+oportunidade através de `OpportunitySkill`. Utilizar `OpportunityPreference`
+apenas para características que não se encaixam no modelo de skill (ex:
+formato de trabalho da equipe, características do processo seletivo).
+
 A estrutura definitiva e a taxonomia dessas preferências serão definidas conforme a evolução do domínio e do sistema de matching.
+
+````
 
 ---
 
@@ -378,7 +395,7 @@ SalaryRange
 ├── valorMinimo
 ├── valorMaximo
 └── moeda
-```
+````
 
 A faixa salarial pode possuir dois estados de visibilidade:
 

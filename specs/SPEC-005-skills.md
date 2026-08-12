@@ -1,9 +1,9 @@
 # SPEC-005 — Skills e Competências
 
 **Status:** Draft
-**Versão:** 0.2
+**Versão:** 0.3
 **Tipo:** Modelo de Domínio
-**Depende de:** SPEC-000, SPEC-002, SPEC-004
+**Depende de:** SPEC-000
 
 ---
 
