@@ -9,6 +9,12 @@
 
 ## Objetivo
 
+> ⚠️ **Pré-condição:** o PostgreSQL já está rodando via Docker neste
+> projeto. Esta task NÃO deve criar um novo `docker-compose.yml` nem alterar
+> o existente — apenas configurar o Testcontainers para os testes de
+> integração (que sobe um banco isolado próprio, independente do container
+> de desenvolvimento já em uso).
+
 Configurar a infraestrutura de testes usada por todas as tasks seguintes — Testcontainers para testes de integração com Postgres real no backend, e testes unitários no frontend.
 
 ## Escopo

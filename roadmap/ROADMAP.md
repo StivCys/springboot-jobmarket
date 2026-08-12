@@ -8,6 +8,7 @@ a próxima task pode começar.
 
 | Task | Fase | Título | Specs | Depende de | Status |
 |---|---|---|---|---|---|
+| [000](task-000.md) | 0 — Fundação | Levantamento do estado atual do projeto | SPEC-000 §17, SPEC-009 | — | 🔲 |
 | [001](task-001.md) | 0 — Fundação | Estrutura do projeto backend | SPEC-000 §17, SPEC-009 | — | 🔲 |
 | [002](task-002.md) | 0 — Fundação | Estrutura do projeto frontend | SPEC-010 §3 | — | 🔲 |
 | [003](task-003.md) | 0 — Fundação | Padrão de resposta/erro da API | SPEC-009 §5 | 001 | 🔲 |

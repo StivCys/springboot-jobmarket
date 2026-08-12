@@ -5,6 +5,15 @@ derivado das specs em `/specs` (SPEC-000 a SPEC-010, v0.3). Cada unidade de
 trabalho é uma **task** autocontida em `task-XXX.md`, pensada para ser
 executada de forma agêntica, uma de cada vez, em ordem.
 
+## Estado do projeto
+
+Este roadmap assume, por padrão, um projeto novo (greenfield). **Não é o
+caso aqui**: o projeto Spring Boot já está configurado e o PostgreSQL já
+roda via Docker. Por isso, a primeira coisa a executar é sempre a
+**TASK-000**, que faz o levantamento do que já existe e produz
+`roadmap/ESTADO-ATUAL.md` — as tasks seguintes (em especial 001, 002 e 004)
+devem ser lidas em conjunto com esse arquivo antes de qualquer criação.
+
 ## Como usar
 
 1. Abra `ROADMAP.md` para ver o panorama geral (todas as fases e tasks).
@@ -19,7 +28,21 @@ executada de forma agêntica, uma de cada vez, em ordem.
 6. Atualize o status da task em `ROADMAP.md` (🔲 → ✅).
 7. Só então siga para a próxima task.
 
-## Regra de ouro
+## Regra de ouro (não recriar o que já existe)
+
+Antes de criar qualquer arquivo de configuração, projeto ou estrutura
+(build.gradle, docker-compose.yml, pom.xml, `ng new`, migrations, etc.), o
+agente deve:
+
+1. Verificar se já existe (via `roadmap/ESTADO-ATUAL.md` e inspeção direta
+   do repositório) — nunca assumir que não existe.
+2. Se existir, **usar e complementar**, nunca recriar/sobrescrever, a menos
+   que a task explicitamente peça uma migração/alteração.
+3. Se encontrar algo que já existe mas diverge do que a task/spec descreve,
+   **parar e reportar a divergência** em vez de decidir sozinho qual versão
+   prevalece.
+
+## Regra de ouro (testes antes de avançar)
 
 > Nenhuma task é considerada concluída, e nenhuma próxima task deve começar,
 > enquanto os testes obrigatórios daquela task não estiverem implementados e

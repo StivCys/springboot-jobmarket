@@ -9,6 +9,15 @@
 
 ## Objetivo
 
+> ⚠️ **Localização:** o frontend Angular deve ser criado no subdiretório
+> `frontend/` na raiz deste repositório (decisão já tomada), convivendo com
+> o projeto Spring Boot Maven já existente. Use `ng new frontend` a partir
+> da raiz do repositório (ou `ng new` dentro de uma pasta `frontend/` já
+> criada, conforme o fluxo do Angular CLI). Garanta que nenhum arquivo do
+> backend (`pom.xml`, `mvnw`, `docker-compose.yml`, `src/`) seja tocado no
+> processo, e que o `.gitignore` combinado (definido na TASK-000) já cubra
+> `frontend/node_modules/` e `frontend/dist/`.
+
 Criar o esqueleto do projeto Angular com os módulos base definidos na SPEC-010 (core, shared, auth, candidate, company) e roteamento inicial.
 
 ## Escopo
