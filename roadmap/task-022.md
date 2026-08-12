@@ -25,6 +25,27 @@ Implementar o cálculo do nível de completude do perfil (INCOMPLETO/BASICO/COMP
 
 - Testes unitários cobrindo as três classificações com diferentes combinações de campos preenchidos
 
+## Economia de tokens
+
+O agente deve minimizar deliberadamente o consumo de tokens.
+
+Regras:
+
+* Não narrar cada comando executado.
+* Não explicar comandos óbvios.
+* Não repetir informações já descobertas.
+* Não reproduzir arquivos completos quando apenas alguns valores são necessários.
+* Não produzir análises especulativas.
+* Não produzir resumos intermediários longos.
+* Não perguntar ao usuário algo que possa ser determinado diretamente pelo repositório.
+* Não apresentar alternativas arquiteturais não solicitadas.
+* Não pesquisar documentação externa.
+* Não usar web ou fontes externas para descobrir informações que devem ser obtidas do próprio repositório.
+* Preferir uma única inspeção que responda várias perguntas relacionadas.
+* Encerrar assim que os critérios forem satisfeitos.
+
+**Princípio:** gastar tokens para descobrir fatos necessários, não para descrever o processo de descoberta.
+
 ## Definition of Done
 
 - [ ] Código implementado e revisado
