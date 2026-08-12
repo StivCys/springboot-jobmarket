@@ -1,0 +1,36 @@
+# TASK-012 — Entidade Company + CompanyMembership
+
+**Fase:** 2 — Empresas
+**Status:** 🔲 Não iniciada
+**Specs relacionadas:** SPEC-003 §3, SPEC-001 §4.2
+**Depende de:** [TASK-005](task-005.md)
+
+---
+
+## Objetivo
+
+Criar as entidades Company e CompanyMembership e suas migrations, conforme modelo revisado (empresa independente do usuário, ligada via membership).
+
+## Escopo
+
+- Entidade `Company` (dados institucionais da SPEC-003 §3, status DRAFT/PUBLISHED/SUSPENDED)
+- Entidade `CompanyMembership` (userId, companyId, role [OWNER/ADMIN/RECRUITER/MEMBER], status)
+- Migrations Flyway correspondentes
+
+## Critérios de aceite
+
+- [ ] Migrations aplicam sem erros
+- [ ] Um User pode estar associado a mais de uma Company via membership
+- [ ] Constraint evita membership duplicado (mesmo user + company)
+
+## Testes obrigatórios
+
+- Testes de integração de persistência para Company e CompanyMembership
+
+## Definition of Done
+
+- [ ] Código implementado e revisado
+- [ ] Todos os critérios de aceite marcados como atendidos
+- [ ] Todos os testes obrigatórios implementados e passando
+- [ ] Suíte de testes completa do projeto continua passando (nenhuma task anterior quebrada)
+- [ ] Task registrada como concluída neste arquivo e no `ROADMAP.md` antes de iniciar a próxima
