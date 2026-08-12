@@ -8,11 +8,11 @@ a próxima task pode começar.
 
 | Task | Fase | Título | Specs | Depende de | Status |
 |---|---|---|---|---|---|
-| [000](task-000.md) | 0 — Fundação | Levantamento do estado atual do projeto | SPEC-000 §17, SPEC-009 | — | 🔲 |
-| [001](task-001.md) | 0 — Fundação | Estrutura do projeto backend | SPEC-000 §17, SPEC-009 | — | 🔲 |
-| [002](task-002.md) | 0 — Fundação | Estrutura do projeto frontend | SPEC-010 §3 | — | 🔲 |
-| [003](task-003.md) | 0 — Fundação | Padrão de resposta/erro da API | SPEC-009 §5 | 001 | 🔲 |
-| [004](task-004.md) | 0 — Fundação | Configuração base de testes | SPEC-000 §22 (evolução incremental) | 001, 002 | 🔲 |
+| [000](task-000.md) | 0 — Fundação | Levantamento do estado atual do projeto | SPEC-000 §17, SPEC-009 | — | ✅ |
+| [001](task-001.md) | 0 — Fundação | Estrutura do projeto backend | SPEC-000 §17, SPEC-009 | — | ✅ |
+| [002](task-002.md) | 0 — Fundação | Estrutura do projeto frontend | SPEC-010 §3 | — | ✅ |
+| [003](task-003.md) | 0 — Fundação | Padrão de resposta/erro da API | SPEC-009 §5 | 001 | ✅ |
+| [004](task-004.md) | 0 — Fundação | Configuração base de testes | SPEC-000 §22 (evolução incremental) | 001, 002 | ✅ |
 | [005](task-005.md) | 1 — Usuários & Autenticação | Entidade User + migration | SPEC-001 §3 | 001, 004 | 🔲 |
 | [006](task-006.md) | 1 — Usuários & Autenticação | Endpoint de registro | SPEC-001 §3.3, SPEC-008 §3 | 005 | 🔲 |
 | [007](task-007.md) | 1 — Usuários & Autenticação | Verificação de e-mail | SPEC-001 §3.3, SPEC-008 §3 | 006 | 🔲 |

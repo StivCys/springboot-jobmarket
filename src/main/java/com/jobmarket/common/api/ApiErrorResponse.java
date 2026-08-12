@@ -1,0 +1,19 @@
+package com.jobmarket.common.api;
+
+public class ApiErrorResponse {
+    private ApiError error;
+
+    public ApiErrorResponse() {}
+
+    public ApiErrorResponse(ApiError error) {
+        this.error = error;
+    }
+
+    public ApiError getError() {
+        return error;
+    }
+
+    public void setError(ApiError error) {
+        this.error = error;
+    }
+}

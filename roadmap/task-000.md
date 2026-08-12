@@ -3,7 +3,7 @@ Você tem razão. Eu quebrei o Markdown em blocos por causa da formatação inte
 # TASK-000 — Levantamento do estado atual do projeto
 
 **Fase:** 0 — Fundação
-**Status:** 🔲 Não iniciada
+**Status:** ✅ Concluída
 **Specs relacionadas:** SPEC-000 §17, SPEC-009
 **Depende de:** Nenhuma
 
@@ -420,44 +420,44 @@ Regras:
 
 ## Critérios de aceite
 
-* [ ] `roadmap/ESTADO-ATUAL.md` criado, contendo:
+* [x] `roadmap/ESTADO-ATUAL.md` criado, contendo:
 
-  * [ ] estrutura atual do backend;
-  * [ ] build tool;
-  * [ ] versão do Java;
-  * [ ] versão do Spring Boot;
-  * [ ] configuração Spring;
-  * [ ] pacote base;
-  * [ ] status do Flyway;
-  * [ ] status das migrations;
-  * [ ] configuração do PostgreSQL existente;
-  * [ ] estrutura definida para o frontend;
-  * [ ] estado do `.gitignore`;
-  * [ ] divergências encontradas entre repositório, specs e roadmap.
+  * [x] estrutura atual do backend;
+  * [x] build tool;
+  * [x] versão do Java;
+  * [x] versão do Spring Boot;
+  * [x] configuração Spring;
+  * [x] pacote base;
+  * [x] status do Flyway;
+  * [x] status das migrations;
+  * [x] configuração do PostgreSQL existente;
+  * [x] estrutura definida para o frontend;
+  * [x] estado do `.gitignore`;
+  * [x] divergências encontradas entre repositório, specs e roadmap.
 
-* [ ] `ROADMAP.md` atualizado refletindo o estado real das tasks afetadas, especialmente:
+* [x] `ROADMAP.md` atualizado refletindo o estado real das tasks afetadas, especialmente:
 
-  * [ ] `TASK-001`;
-  * [ ] `TASK-002`;
-  * [ ] `TASK-004`.
+  * [x] `TASK-001`;
+  * [x] `TASK-002`;
+  * [x] `TASK-004`.
 
-* [ ] `.gitignore` cobre os artefatos necessários:
+* [x] `.gitignore` cobre os artefatos necessários:
 
-  * [ ] `target/`;
-  * [ ] `node_modules/`;
-  * [ ] `dist/`.
+  * [x] `target/`;
+  * [x] `node_modules/`;
+  * [x] `dist/`.
 
-* [ ] Nenhum arquivo de código de produção foi alterado.
+* [x] Nenhum arquivo de código de produção foi alterado.
 
-* [ ] Nenhuma migration foi criada.
+* [x] Nenhuma migration foi criada.
 
-* [ ] Flyway não foi adicionado ao `pom.xml`.
+* [x] Flyway não foi adicionado ao `pom.xml`.
 
-* [ ] Nenhum novo `docker-compose.yml` foi criado.
+* [x] Nenhum novo `docker-compose.yml` foi criado.
 
-* [ ] Nenhuma configuração existente foi sobrescrita ou recriada desnecessariamente.
+* [x] Nenhuma configuração existente foi sobrescrita ou recriada desnecessariamente.
 
-* [ ] `git diff` revisado após as alterações.
+* [x] `git diff` revisado após as alterações.
 
 ---
 
@@ -473,14 +473,14 @@ Não executar build ou suíte de testes apenas por formalidade.
 
 ## Definition of Done
 
-* [ ] `roadmap/ESTADO-ATUAL.md` criado e revisado.
-* [ ] `ROADMAP.md` atualizado com o estado real.
-* [ ] `.gitignore` ajustado somente se necessário.
-* [ ] Todas as divergências relevantes documentadas.
-* [ ] Nenhuma task foi iniciada em paralelo.
-* [ ] Nenhuma alteração de código de produção realizada.
-* [ ] `git diff` revisado.
-* [ ] Critérios de aceite satisfeitos.
-* [ ] Task encerrada.
+* [x] `roadmap/ESTADO-ATUAL.md` criado e revisado.
+* [x] `ROADMAP.md` atualizado com o estado real.
+* [x] `.gitignore` ajustado somente se necessário.
+* [x] Todas as divergências relevantes documentadas.
+* [x] Nenhuma task foi iniciada em paralelo.
+* [x] Nenhuma alteração de código de produção realizada.
+* [x] `git diff` revisado.
+* [x] Critérios de aceite satisfeitos.
+* [x] Task encerrada.
 
 Após concluir esta task, **não iniciar automaticamente a próxima task**. A próxima task somente deve ser executada mediante instrução explícita.

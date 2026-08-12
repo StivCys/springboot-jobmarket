@@ -1,7 +1,7 @@
 # TASK-003 — Padrão de resposta/erro da API
 
 **Fase:** 0 — Fundação
-**Status:** 🔲 Não iniciada
+**Status:** ✅ Concluída
 **Specs relacionadas:** SPEC-009 §5
 **Depende de:** [TASK-001](task-001.md)
 
@@ -19,9 +19,9 @@ Implementar o envelope padrão de resposta (data/meta) e o tratamento global de 
 
 ## Critérios de aceite
 
-- [ ] Uma exceção de 'não encontrado' retorna 404 no formato padrão
-- [ ] Uma exceção de validação retorna 422 no formato padrão
-- [ ] Erros não tratados retornam 500 sem vazar stacktrace no corpo da resposta
+- [x] Uma exceção de 'não encontrado' retorna 404 no formato padrão
+- [x] Uma exceção de validação retorna 422 no formato padrão
+- [x] Erros não tratados retornam 500 sem vazar stacktrace no corpo da resposta
 
 ## Testes obrigatórios
 
@@ -50,8 +50,8 @@ Regras:
 
 ## Definition of Done
 
-- [ ] Código implementado e revisado
-- [ ] Todos os critérios de aceite marcados como atendidos
-- [ ] Todos os testes obrigatórios implementados e passando
-- [ ] Suíte de testes completa do projeto continua passando (nenhuma task anterior quebrada)
-- [ ] Task registrada como concluída neste arquivo e no `ROADMAP.md` antes de iniciar a próxima
+- [x] Código implementado e revisado
+- [x] Todos os critérios de aceite marcados como atendidos
+- [x] Todos os testes obrigatórios implementados e passando
+- [x] Suíte de testes completa do projeto continua passando (nenhuma task anterior quebrada)
+- [x] Task registrada como concluída neste arquivo e no `ROADMAP.md` antes de iniciar a próxima

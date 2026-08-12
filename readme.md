@@ -483,13 +483,13 @@ Backend:
 
 ```text
 com.jobmarket
-├── controller
-├── service
-├── repository
-├── entity
-├── dto
-├── config
-└── exception
+├── application
+├── candidate
+├── company
+├── matching
+├── opportunity
+├── skill
+└── user
 ```
 
 A arquitetura poderá ser reorganizada posteriormente caso a complexidade do sistema justifique.

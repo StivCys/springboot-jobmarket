@@ -1,7 +1,7 @@
 # TASK-004 — Configuração base de testes
 
 **Fase:** 0 — Fundação
-**Status:** 🔲 Não iniciada
+**Status:** ✅ Concluída
 **Specs relacionadas:** SPEC-000 §22 (evolução incremental)
 **Depende de:** [TASK-001](task-001.md), [TASK-002](task-002.md)
 
@@ -26,9 +26,9 @@ Configurar a infraestrutura de testes usada por todas as tasks seguintes — Tes
 
 ## Critérios de aceite
 
-- [ ] Um teste de integração de exemplo sobe um Postgres via Testcontainers e roda uma migration Flyway
-- [ ] Relatório de cobertura é gerado no backend
-- [ ] `ng test` executa com sucesso no frontend
+- [x] Um teste de integração de exemplo sobe um Postgres via Testcontainers e roda uma migration Flyway
+- [x] Relatório de cobertura é gerado no backend
+- [x] `ng test` executa com sucesso no frontend
 
 ## Testes obrigatórios
 
@@ -57,8 +57,8 @@ Regras:
 
 ## Definition of Done
 
-- [ ] Código implementado e revisado
-- [ ] Todos os critérios de aceite marcados como atendidos
-- [ ] Todos os testes obrigatórios implementados e passando
-- [ ] Suíte de testes completa do projeto continua passando (nenhuma task anterior quebrada)
-- [ ] Task registrada como concluída neste arquivo e no `ROADMAP.md` antes de iniciar a próxima
+- [x] Código implementado e revisado
+- [x] Todos os critérios de aceite marcados como atendidos
+- [x] Todos os testes obrigatórios implementados e passando
+- [x] Suíte de testes completa do projeto continua passando (nenhuma task anterior quebrada)
+- [x] Task registrada como concluída neste arquivo e no `ROADMAP.md` antes de iniciar a próxima

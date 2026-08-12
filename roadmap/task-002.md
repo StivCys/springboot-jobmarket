@@ -1,7 +1,7 @@
 # TASK-002 — Estrutura do projeto frontend
 
 **Fase:** 0 — Fundação
-**Status:** 🔲 Não iniciada
+**Status:** ✅ Concluída
 **Specs relacionadas:** SPEC-010 §3
 **Depende de:** Nenhuma
 
@@ -29,9 +29,9 @@ Criar o esqueleto do projeto Angular com os módulos base definidos na SPEC-010 
 
 ## Critérios de aceite
 
-- [ ] `ng build` executa com sucesso
-- [ ] `ng serve` sobe a aplicação localmente
-- [ ] Navegação entre rotas placeholder de cada módulo funciona
+- [x] `ng build` executa com sucesso
+- [x] `ng serve` sobe a aplicação localmente
+- [x] Navegação entre rotas placeholder de cada módulo funciona
 
 ## Testes obrigatórios
 
@@ -60,8 +60,8 @@ Regras:
 
 ## Definition of Done
 
-- [ ] Código implementado e revisado
-- [ ] Todos os critérios de aceite marcados como atendidos
-- [ ] Todos os testes obrigatórios implementados e passando
-- [ ] Suíte de testes completa do projeto continua passando (nenhuma task anterior quebrada)
-- [ ] Task registrada como concluída neste arquivo e no `ROADMAP.md` antes de iniciar a próxima
+- [x] Código implementado e revisado
+- [x] Todos os critérios de aceite marcados como atendidos
+- [x] Todos os testes obrigatórios implementados e passando
+- [x] Suíte de testes completa do projeto continua passando (nenhuma task anterior quebrada)
+- [x] Task registrada como concluída neste arquivo e no `ROADMAP.md` antes de iniciar a próxima

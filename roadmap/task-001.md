@@ -1,7 +1,7 @@
 # TASK-001 — Estrutura do projeto backend
 
 **Fase:** 0 — Fundação
-**Status:** 🔲 Não iniciada
+**Status:** ✅ Concluída
 **Specs relacionadas:** SPEC-000 §17, SPEC-009
 **Depende de:** Nenhuma
 
@@ -30,10 +30,10 @@ Criar o esqueleto do projeto Spring Boot (Java 24) com Gradle, estrutura de paco
 
 ## Critérios de aceite
 
-- [ ] `./gradlew build` executa com sucesso
-- [ ] Aplicação sobe localmente (`./gradlew bootRun`) e conecta ao Postgres do docker-compose
-- [ ] Health check (`/actuator/health`) retorna UP
-- [ ] Estrutura de pacotes documentada no README do backend
+- [x] `./gradlew build` executa com sucesso
+- [x] Aplicação sobe localmente (`./gradlew bootRun`) e conecta ao Postgres do docker-compose
+- [x] Health check (`/actuator/health`) retorna UP
+- [x] Estrutura de pacotes documentada no README do backend
 
 ## Testes obrigatórios
 
@@ -64,8 +64,8 @@ Regras:
 
 ## Definition of Done
 
-- [ ] Código implementado e revisado
-- [ ] Todos os critérios de aceite marcados como atendidos
-- [ ] Todos os testes obrigatórios implementados e passando
-- [ ] Suíte de testes completa do projeto continua passando (nenhuma task anterior quebrada)
-- [ ] Task registrada como concluída neste arquivo e no `ROADMAP.md` antes de iniciar a próxima
+- [x] Código implementado e revisado
+- [x] Todos os critérios de aceite marcados como atendidos
+- [x] Todos os testes obrigatórios implementados e passando
+- [x] Suíte de testes completa do projeto continua passando (nenhuma task anterior quebrada)
+- [x] Task registrada como concluída neste arquivo e no `ROADMAP.md` antes de iniciar a próxima
